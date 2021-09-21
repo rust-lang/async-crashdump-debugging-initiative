@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>{{INITIATIVE_NAME}} initiative</title>
+        <title>async-crashdump-debugging initiative</title>
                 <meta name="robots" content="noindex" />
                 
 
@@ -83,7 +83,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item "><a href="index.html">👋 Welcome</a></li><li class="chapter-item "><a href="CHARTER.html">📜 Charter</a></li><li class="chapter-item "><a href="evaluation.html">🔬 Evaluation</a></li><li class="chapter-item "><a href="explainer.html">📚 Explainer</a></li><li class="chapter-item "><a href="RFC.html">✨ RFC</a></li><li class="chapter-item "><a href="design-discussions/index.html">💬 Design discussions</a></li><li class="chapter-item "><a href="FAQ.html">😕 FAQ</a></li></ol>            </div>
+                <ol class="chapter"><li class="chapter-item "><a href="index.html">👋 Welcome</a></li><li class="chapter-item "><a href="CHARTER.html">📜 Charter</a></li><li class="chapter-item "><a href="evaluation.html">🔬 Evaluation</a></li><li class="chapter-item "><a href="explainer.html">📚 Explainer</a></li><li class="chapter-item "><a href="design-discussions/index.html">💬 Design discussions</a></li><li class="chapter-item "><a href="FAQ.html">😕 FAQ</a></li></ol>            </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
 
@@ -112,13 +112,13 @@
                         </button>
                                             </div>
 
-                    <h1 class="menu-title">{{INITIATIVE_NAME}} initiative</h1>
+                    <h1 class="menu-title">async-crashdump-debugging initiative</h1>
 
                     <div class="right-buttons">
                                                 <a href="print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
-                                                                        <a href="https://github.com/rust-lang/{{INITIATIVE_SLUG}}" title="Git repository" aria-label="Git repository">
+                                                                        <a href="https://github.com/rust-lang/async-crashdump-debugging-initiative" title="Git repository" aria-label="Git repository">
                             <i id="git-repository-button" class="fa fa-github"></i>
                         </a>
                                                 
@@ -147,7 +147,7 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="initiative_name-initiative"><a class="header" href="#initiative_name-initiative">{{INITIATIVE_NAME}} initiative</a></h1>
+                        <h1 id="async-crashdump-debugging-initiative"><a class="header" href="#async-crashdump-debugging-initiative">async-crashdump-debugging initiative</a></h1>
 <!--
 
  This is the template for creating an initiative in rust-lang. Be sure to go
@@ -160,14 +160,14 @@
  * Edit CHARTER.md
  * Replace placeholder text (see below)
  * Remove references to "expermental" and "evaluation" unless you need them
- 
+
   All of the text across all of the initial files uses the same group of
  variables to allow for easy search and replace. They are listed below.
 
- Example sed command: `sed -i '' 's/{{INITIATIVE_NAME}}/Inline ASM/g' ./**/*.md`
+ Example sed command: `sed -i '' 's/async-crashdump-debugging/Inline ASM/g' ./**/*.md`
  *Note* you need `-i ''` on macOS and just `-i` on Linux.
 
- * {{INITIATIVE_NAME}} -> The display name of your group e.g. "Inline ASM".
+ * async-crashdump-debugging -> The display name of your group e.g. "Inline ASM".
  * {{INITIATIVE_SLUG}} -> The url slug name of your group used for
    `rust-lang/team` and repo name. e.g. "pg-inline-asm".
  * {{CHAT_PLATFORM}} -> The name of your chat app e.g. "Zulip".
@@ -180,7 +180,7 @@ https://github.com/rust-lang/infra-team/issues/new
 -->
 <p><img src="https://img.shields.io/badge/status-active-brightgreen.svg" alt="initiative status: active" /></p>
 <h2 id="what-is-this"><a class="header" href="#what-is-this">What is this?</a></h2>
-<p>This page tracks the work of the {{INITIATIVE_NAME}} <a href="https://lang-team.rust-lang.org/initiatives.html">initiative</a>! To learn more about what we are trying to do, and to find out the people who are doing it, take a look at the <a href="./CHARTER.html">charter</a>. </p>
+<p>This page tracks the work of the async-crashdump-debugging <a href="https://lang-team.rust-lang.org/initiatives.html">initiative</a>! To learn more about what we are trying to do, and to find out the people who are doing it, take a look at the <a href="./CHARTER.html">charter</a>.</p>
 <h2 id="current-status"><a class="header" href="#current-status">Current status</a></h2>
 <p>The following table lists of the stages of an initiative, along with links to the artifacts that will be produced during that stage.</p>
 <table><thead><tr><th>Stage</th><th>State</th><th>Artifact(s)</th></tr></thead><tbody>
@@ -188,7 +188,6 @@ https://github.com/rust-lang/infra-team/issues/new
 <tr><td></td><td></td><td><a href="./CHARTER.html">Charter</a></td></tr>
 <tr><td></td><td></td><td><a href="https://github.com/rust-lang/rust/">Tracking issue</a></td></tr>
 <tr><td><a href="https://lang-team.rust-lang.org/initiatives/process/stages/proposal.html">Experimental</a></td><td>🦀</td><td><a href="./evaluation.html">Evaluation</a></td></tr>
-<tr><td></td><td></td><td><a href="./RFC.html">RFC</a></td></tr>
 <tr><td><a href="https://lang-team.rust-lang.org/initiatives/process/stages/development.html">Development</a></td><td>💤</td><td><a href="./explainer.html">Explainer</a></td></tr>
 <tr><td><a href="https://lang-team.rust-lang.org/initiatives/process/stages/feature-complete.html">Feature complete</a></td><td>💤</td><td>Stabilization report</td></tr>
 <tr><td><a href="https://lang-team.rust-lang.org/initiatives/process/stages/stabilized.html">Stabilized</a></td><td>💤</td><td></td></tr>
@@ -203,34 +202,45 @@ https://github.com/rust-lang/infra-team/issues/new
 <ul>
 <li>Check for 'help wanted' issues on this repository!</li>
 <li>If you would like to help with development, please contact the <a href="./charter.html#membership">owner</a> to find out if there are things that need doing.</li>
-<li>If you would like to help with the design, check the list of active <a href="./design-questions/README.html">design questions</a> first. </li>
-<li>If you have questions about the design, you can file an issue, but be sure to check the <a href="./FAQ.html">FAQ</a> or the <a href="./design-questions/README.html">design-questions</a> first to see if there is already something that covers your topic.</li>
+<li>If you would like to help with the design, check the list of active <a href="./design-discussions/README.html">design discussions</a> first.</li>
+<li>If you have questions about the design, you can file an issue, but be sure to check the <a href="./FAQ.html">FAQ</a> or the <a href="./design-discussions/README.html">design-discussions</a> first to see if there is already something that covers your topic.</li>
 <li>If you are using the feature and would like to provide feedback about your experiences, please [open a &quot;experience report&quot; issue].</li>
 <li>If you are using the feature and would like to report a bug, please open a regular issue.</li>
 </ul>
-<p>We also participate on <a href="%7B%7BCHAT_LINK%7D%7D">{{CHAT_PLATFORM}}</a>, feel free to introduce yourself over there and ask us any questions you have.</p>
+<p>We also participate on <a href="https://rust-lang.zulipchat.com/#narrow/stream/187312-wg-async-foundations">Zulip</a>, feel free to introduce yourself over there and ask us any questions you have.</p>
 <h2 id="building-documentation"><a class="header" href="#building-documentation">Building Documentation</a></h2>
 <p>This repository is also an mdbook project. You can view and build it using the
 following command.</p>
 <pre><code>mdbook serve
 </code></pre>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="-initiative_name-charter"><a class="header" href="#-initiative_name-charter">📜 {{INITIATIVE_NAME}} Charter</a></h1>
-<!--
- Provide an introduction summarising the goals and motivation behind your
- initiative.
--->
+<div style="break-before: page; page-break-before: always;"></div><h1 id="-async-crashdump-debugging-charter"><a class="header" href="#-async-crashdump-debugging-charter">📜 async-crashdump-debugging Charter</a></h1>
+<p>The goal of this initiative is to provide tools that simplify debugging crashdumps of async Rust programs.</p>
 <h2 id="proposal"><a class="header" href="#proposal">Proposal</a></h2>
-<!--
-Copy and paste the proposal into here. 
-
-Feel free to move some elements, like design questions that came up,
-into the approriate section.
--->
+<p>In particular the initiative strives to provide:</p>
+<ul>
+<li>Debugger plugins for GDB and WinDbg/CDB that help with
+<ul>
+<li>finding executors from various runtimes (future-rs, Tokio, smol)</li>
+<li>listing tasks currently being owned by a given executor</li>
+<li>mapping a task object to the source definition it represents</li>
+<li>creating logical stack traces that should dependencies between tasks and resources</li>
+</ul>
+</li>
+<li>A test framework for debugger plugins</li>
+<li>A guide for writing plugins for other debuggers</li>
+<li>A guide for forking and extending debugging plugins in order to support custom, proprietary executor runtimes</li>
+<li>Integration with tokio-console (?)</li>
+</ul>
+<p>Debugging a crashdump of an async Rust program requires both intimiate knowledge of
+executor runtime internals and a certain level of expertise in using debuggers.
+It is the goal of this initiative to provide a toolbox that makes this task less daunting.
+A good portion of the more difficult debugger interactions can be automated via plugins.</p>
 <h2 id="membership"><a class="header" href="#membership">Membership</a></h2>
-<table><thead><tr><th>Role</th><th>Github</th></tr></thead><tbody>
-<tr><td><a href="https://lang-team.rust-lang.org/initiatives/process/roles/owner.html">Owner</a></td><td><a href="https://github.com/ghost">ghost</a></td></tr>
-<tr><td><a href="https://lang-team.rust-lang.org/initiatives/process/roles/liaison.html">Liaison</a></td><td><a href="https://github.com/ghost">ghost</a></td></tr>
+<table><thead><tr><th>Role</th><th>Github</th><th>Zulip</th></tr></thead><tbody>
+<tr><td><a href="https://lang-team.rust-lang.org/initiatives/process/roles/owner.html">Owner</a></td><td><a href="https://github.com/michaelwoerister">michaelwoerister</a></td><td>mw</td></tr>
 </tbody></table>
+<!-- | [Liaison] | [ghost](https://github.com/ghost) | -->
+<!-- [Liaison]: https://lang-team.rust-lang.org/initiatives/process/roles/liaison.html -->
 <div style="break-before: page; page-break-before: always;"></div><h1 id="-evaluation"><a class="header" href="#-evaluation">🔬 Evaluation</a></h1>
 <blockquote>
 <p>The <em>evaluation</em> surveys the various design approaches that are under consideration.
@@ -243,13 +253,6 @@ in the <a href="./design-discussions.html">design-discussions</a> for more detai
 <p>The &quot;explainer&quot; is &quot;end-user readable&quot; documentation that explains how to use the feature being deveoped by this initiative.
 If you want to experiment with the feature, you've come to the right place.
 Until the feature enters &quot;feature complete&quot; form, the explainer should be considered a work-in-progress.</p>
-</blockquote>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="-rfc"><a class="header" href="#-rfc">✨ RFC</a></h1>
-<blockquote>
-<p>The RFC exists here in draft form. It will be edited and amended over the course of this initiative.
-Note that some initiatives produce multiple RFCs.</p>
-<p>Until there is an accepted RFC, any feature gates must be labeled as experimental.</p>
-<p>When you're ready to start drafting, copy in the <a href="https://raw.githubusercontent.com/rust-lang/rfcs/master/0000-template.md">template text</a> from the <a href="https://github.com/rust-lang/rfcs">rfcs</a> repository.</p>
 </blockquote>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="design-discussions"><a class="header" href="#design-discussions">Design discussions</a></h1>
 <p>This directory hosts notes on important design discussions along with their resolutions.
