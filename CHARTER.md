@@ -10,7 +10,7 @@ In particular the initiative strives to provide:
   - finding executors from various runtimes (future-rs, Tokio, smol)
   - listing tasks currently being owned by a given executor
   - mapping a task object to the source definition it represents
-  - creating logical stack traces that should dependencies between tasks and resources
+  - creating logical stack traces that shows dependencies between tasks and resources
 - A test framework for debugger plugins
 - A guide for writing plugins for other debuggers
 - A guide for forking and extending debugging plugins in order to support custom, proprietary executor runtimes
