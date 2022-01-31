@@ -26,7 +26,7 @@ A good portion of the more difficult debugger interactions can be automated via 
 | Role | Github | Zulip |
 | ---  | ------ | ----- |
 | [Owner] | [michaelwoerister](https://github.com/michaelwoerister) | mw |
-<!-- | [Liaison] | [ghost](https://github.com/ghost) | -->
+| [Liaison] | [pnkfelix](https://github.com/pnkfelix) | pnkfelix |
 
 [Owner]: https://lang-team.rust-lang.org/initiatives/process/roles/owner.html
-<!-- [Liaison]: https://lang-team.rust-lang.org/initiatives/process/roles/liaison.html -->
+[Liaison]: https://lang-team.rust-lang.org/initiatives/process/roles/liaison.html
